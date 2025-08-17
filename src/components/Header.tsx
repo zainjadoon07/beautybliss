@@ -1,4 +1,4 @@
-import React, {  useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X, Flower2, Star } from 'lucide-react';
 
 interface HeaderProps {
@@ -76,8 +76,6 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
               </button>
             ))}
           </nav>
-
-
 
           {/* Enhanced Mobile menu button */}
           <div className="lg:hidden">

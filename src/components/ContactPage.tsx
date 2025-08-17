@@ -26,15 +26,15 @@ const ContactPage: React.FC = () => {
 
     try {
       await emailjs.send(
-        import.meta.env.VITE_service_key, // Service ID
-        import.meta.env.VITE_template_key, // Template ID
+        import.meta.env.VITE_SERVICE_ID, // Service ID
+        import.meta.env.VITE_TEMPLATE_ID, // Template ID
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message
         },
-        import.meta.env.VITE_public_key // Public Key
+        import.meta.env.VITE_PUBLIC_KEY // Public Key
       );
 
       setIsSubmitted(true);

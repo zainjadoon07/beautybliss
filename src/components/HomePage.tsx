@@ -49,11 +49,7 @@ const HomePage: React.FC = () => {
       <div className="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Enhanced Hero Section */}
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          {/* Badge */}
-          <div className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full text-white text-sm font-medium mb-8 animate-fade-in-down">
-            <Sparkles className="h-4 w-4 mr-2 animate-pulse" />
-            Trusted by 50,000+ Beauty Enthusiasts
-          </div>
+          
 
           {/* Main Heading */}
           <h1 className="text-5xl lg:text-7xl xl:text-8xl font-bold text-gray-900 mb-8 leading-tight">
@@ -80,7 +76,7 @@ const HomePage: React.FC = () => {
               { icon: Star, value: "4.8/5", label: "Product Rating" },
               { icon: Users, value: "1000+", label: "Beauty Enthusiasts" },
               { icon: TrendingUp, value: "90%", label: "Satisfaction Rate" },
-              { icon: Award, value: "25+", label: "Curated Products" }
+              { icon: Award, value: "10+", label: "Curated Products" }
             ].map((item, index) => (
               <div key={index} className="text-center group">
                 <div className="w-16 h-16 bg-gradient-to-r from-rose-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300 shadow-glow">
