@@ -10,9 +10,7 @@ import ProductModal from "./components/ProductModal";
 import Footer from "./components/Footer";
 import { Product } from "./types/Product";
 import { products } from "./data/products";
-import { inject } from '@vercel/analytics';
-
-inject();
+import { Analytics } from '@vercel/analytics/react';
 
 
 function App() {
@@ -168,6 +166,8 @@ function App() {
 
         {selectedProduct && <ProductModal product={selectedProduct} onClose={closeProductModal} />}
       </div>
+      
+      <Analytics />
     </div>
   );
 }
